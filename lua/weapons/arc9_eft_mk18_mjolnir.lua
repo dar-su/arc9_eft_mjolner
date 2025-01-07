@@ -63,44 +63,44 @@ SWEP.Slot = 3
 
 ------------------------- |||           Recoil            ||| -------------------------
 
-SWEP.Recoil = 1 -- general multiplier of main recoil
+SWEP.Recoil = 1.25 -- general multiplier of main recoil
 
-SWEP.RecoilUp   = 16   -- up recoil
-SWEP.RecoilSide = 5.1 -- sideways recoil
-SWEP.RecoilRandomUp   = 0.5 -- random up/down
-SWEP.RecoilRandomSide = 4   -- random left/right
+SWEP.RecoilUp   = 8   -- up recoil
+SWEP.RecoilSide = 4.5 -- sideways recoil
+SWEP.RecoilRandomUp   = 0.35 -- random up/down
+SWEP.RecoilRandomSide = 1.0   -- random left/right
 
-SWEP.RecoilAutoControl = 4.0 -- autocompenstaion, could be cool if set to high but it also affects main recoil
+SWEP.RecoilAutoControl = 2.5 -- autocompenstaion, could be cool if set to high but it also affects main recoil
 
 -- visual recoil   aka visrec
-SWEP.VisualRecoil = 1 -- general multiplier for it
+SWEP.VisualRecoil = 1.25 -- general multiplier for it
 
-SWEP.EFT_VisualRecoilUp_BURST_SEMI   = 2.5   -- up/down tilt when semi/bursts
-SWEP.VisualRecoilUp                   = 2.5   --   when fullautoing
+SWEP.EFT_VisualRecoilUp_BURST_SEMI   = 1.5   -- up/down tilt when semi/bursts
+SWEP.VisualRecoilUp                   = 1.5   --   when fullautoing
 SWEP.EFT_VisualRecoilSide_BURST_SEMI = 0.001 -- left/right tilt when semi/burst
-SWEP.VisualRecoilSide                 = 0.04   --   when fullautoing
-SWEP.VisualRecoilRoll = 15 -- roll tilt, a visual thing
+SWEP.VisualRecoilSide                 = 0.005   --   when fullautoing
+SWEP.VisualRecoilRoll = 4 -- roll tilt, a visual thing
 
-SWEP.VisualRecoilPunch = 6 -- How far back visrec moves the gun
-SWEP.VisualRecoilPunchSights = 35 -- same but in sights only
+SWEP.VisualRecoilPunch = 1 -- How far back visrec moves the gun
+SWEP.VisualRecoilPunchSights = 15 -- same but in sights only
 
-SWEP.VisualRecoilDampingConst = 100  -- spring settings, this is speed of visrec
-SWEP.VisualRecoilSpringPunchDamping = 4 -- the less this is the more wobbly gun moves
-SWEP.VisualRecoilSpringMagnitude = 0.5 -- some third element of spring, high values make gun shake asf on low fps
+SWEP.VisualRecoilDampingConst = 50  -- spring settings, this is speed of visrec
+SWEP.VisualRecoilSpringPunchDamping = 3.4 -- the less this is the more wobbly gun moves
+SWEP.VisualRecoilSpringMagnitude = 2 -- some third element of spring, high values make gun shake asf on low fps
 
-SWEP.VisualRecoilPositionBumpUpHipFire = 0.3 -- gun will go down each shot by this value
-SWEP.VisualRecoilPositionBumpUp = 0.05 -- same but in sights
+SWEP.VisualRecoilPositionBumpUpHipFire = -0.01 -- gun will go down each shot by this value
+SWEP.VisualRecoilPositionBumpUp = 0.01 -- same but in sights
 SWEP.VisualRecoilPositionBumpUpRTScope = 0.05 -- same but in rt scopes, you probably should keep it same as sight value, i guess it doesn't matter anymore after recoil update
 
--- SWEP.VisualRecoilCenter = Vector(2, 12, 2) -- ugh, i dont now what to set it too, but probably it should be diffferent on each gun
 SWEP.EFT_ShotsToSwitchToFullAutoBehaviur = 2 -- how many shots for switch to fullauto stats from semi/burst, + 2 shots afterwards are lerping. you probably should not touch this but ok
 
-SWEP.RecoilKick = 0.85 -- camera roll each shot + makes camera go more up when fullautoing
+SWEP.RecoilKick = 3.8 -- camera roll each shot + makes camera go more up when fullautoing
 
-SWEP.VisualRecoilCenter = Vector(4.28, 19, -2)
-SWEP.SubtleVisualRecoil = 0.75
-SWEP.SubtleVisualRecoilDirection = 3
-SWEP.SubtleVisualRecoilSpeed = 1.25
+SWEP.VisualRecoilCenter = Vector(4.28, 15, -4.2)
+SWEP.SubtleVisualRecoil = 1.4
+SWEP.SubtleVisualRecoilHipFire = 2
+SWEP.SubtleVisualRecoilDirection = 4
+SWEP.SubtleVisualRecoilSpeed = 0.25
 
 ------------------------- |||           Damage            ||| -------------------------
 
@@ -114,11 +114,11 @@ SWEP.PhysBulletMuzzleVelocity = 21000
 ------------------------- |||           Malfunctions            ||| -------------------------
 
 SWEP.MalfunctionNeverLastShoot = true 
-SWEP.MalfunctionMeanShotsToFail = 100
-SWEP.MalfunctionMeanShotsToFailMultHot = -0.2
+SWEP.MalfunctionMeanShotsToFail = 160
+SWEP.MalfunctionMeanShotsToFailMultHot = 0.2
 SWEP.MalfunctionWait = -1 -- oh god why the fuck 0 is 0.5???????
-SWEP.HeatCapacity = 90
-SWEP.HeatDissipation = 6
+SWEP.HeatCapacity = 25
+SWEP.HeatDissipation = 1
 
 ------------------------- |||           Minor stuff            ||| -------------------------
 
