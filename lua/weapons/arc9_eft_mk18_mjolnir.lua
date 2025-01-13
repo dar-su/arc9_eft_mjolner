@@ -158,7 +158,7 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
     [4] = "patron_in_mag2",
 }
 
-SWEP.SuppressEmptySuffix = true
+SWEP.SuppressEmptySuffix = false
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
